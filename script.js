@@ -45,5 +45,5 @@ function message(x) {
   arr = ["Victory", "Defeat", "Draw"];
   console.log(arr[x]);
   result = document.querySelector(".result");
-  result.innerHTML = arr[x];
+  result.textContent = arr[x];
 }
