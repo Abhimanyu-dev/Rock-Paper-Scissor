@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="title">
-            Rock Paper Scissor
+      <div class="title">Rock Paper Scissor</div>
+      <div class="choices">
+        <div class="user-choice">
+          <div class="rock option">
+            <img
+              onclick="fun(this)"
+              class="user Rock"
+              src="./Images/Rock.png"
+              alt="Rock"
+            />
+          </div>
+          <div class="paper option">
+            <img
+              onclick="fun(this)"
+              class="user Paper"
+              src="./Images/Paper.png"
+              alt="Paper"
+            />
+          </div>
+          <div class="scissor option">
+            <img
+              onclick="fun(this)"
+              class="user Scissor"
+              src="./Images/Scissor.png"
+              alt="Scissor"
+            />
+          </div>
         </div>
-        <div class="choices">
-            <div class="user-choice">
-                <div class="rock option">
-                    <img onclick="fun(this)" class="user Rock" src="./Images/Rock.png" alt="Rock">
-                </div>
-                <div class="paper option">
-                    <img onclick="fun(this)" class="user Paper" src="./Images/Paper.png" alt="Paper">
-                </div>
-                <div class="scissor option">
-                    <img onclick="fun(this)" class="user Scissor" src="./Images/Scissor.png" alt="Scissor">    
-                </div>
-            </div>
-            <div class="computer-choice">
-                <div class="rock option">
-                <img src="./Images/Rock.png" alt="Rock" id="Rock">
-                </div>
-                <div class="paper option">
-                <img src="./Images/Paper.png" alt="Paper" id="Paper">
-                </div>
-                <div class="scissor option">
-                    <img src="./Images/Scissor.png" alt="Scissor" id="Scissor">    
-                </div>
-            </div>
-        </div>  
-        <div class="result"></div>
+        <div class="computer-choice">
+          <div class="rock option">
+            <img src="./Images/Rock.png" alt="Rock" id="Rock" />
+          </div>
+          <div class="paper option">
+            <img src="./Images/Paper.png" alt="Paper" id="Paper" />
+          </div>
+          <div class="scissor option">
+            <img src="./Images/Scissor.png" alt="Scissor" id="Scissor" />
+          </div>
+        </div>
+      </div>
+      <div class="result"></div>
     </div>
-    
-    <script src="./script.js" ></script>
 
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
