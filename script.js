@@ -1,8 +1,6 @@
 function play(choice) {
   arr = ["Rock", "Paper", "Scissor"];
   computer = document.querySelector("#" + arr[Math.floor(Math.random() * 3)]);
-  // console.log(choice)
-  // console.log(computer);
   remove_user_border(choice);
   remove_computer_border(computer);
 
